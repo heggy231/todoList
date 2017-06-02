@@ -1,3 +1,3 @@
 # todoList
 keep one's todos
-See todoList live 
+View todoList live: https://heggy231.github.io/todoList/todo.html
