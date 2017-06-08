@@ -41,3 +41,13 @@ function deleteTodo (position) {
     todos.splice(position, 1);
     displayTodos();
 }
+
+// object v3  > property we want to get at
+// Lesson on object, how to call an object
+var sayHeggy = {
+    name: 'Heggy',
+    sayName: function () {
+        console.log(this.name);
+    }
+}
+sayHeggy.sayName();
