@@ -43,7 +43,7 @@ function deleteTodo (position) {
 }
 
 // object v3  > property we want to get at
-// Lesson on object, how to call an object
+// Lesson on object, how to call an object using this keyword
 var sayHeggy = {
     name: 'Heggy',
     sayName: function () {

@@ -16,4 +16,9 @@ V2 Requirements:
 - It should have a function to change todos
 - It should have a function to delete todos
 
-
+V3 Requirements:
+- It should store the todos array on an object
+- It should have a displyTodos method
+- It should have an addTodo method
+- It should have a changeTodo method
+- It should have a deleteTodo method
