@@ -28,7 +28,11 @@ function addTodo(todo) {
 // Todos:  (7) ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo", "just arrived"]
 
 // v2 change todo
-function changeTodo(){
-    todos[0] = "I got changed";
+function changeTodo(index, newTodo){
+    todos[index] = newTodo;
     displayTodos();
 }
+
+// to call the function
+changeTodo(0, 'I am changed!');
+
