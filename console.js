@@ -36,3 +36,8 @@ function changeTodo(index, newTodo){
 // to call the function
 changeTodo(0, 'I am changed!');
 
+// v2 delete Todos, position indicated gets deleted
+function deleteTodo (position) {
+    todos.splice(position, 1);
+    displayTodos();
+}
