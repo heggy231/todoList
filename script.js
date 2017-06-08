@@ -19,10 +19,12 @@ function displayTodos () {
 }
 
 // v2 function to add new todos
-
-function addTodo() {
-    todos.push('new todo');
+// add new todos and combine earlier function to display todo
+function addTodo(todo) {
+    todos.push(todo);
+    displayTodos()
 }
 
 todos // to see 'new todo' element is added to the array
+
 
