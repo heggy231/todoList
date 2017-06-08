@@ -8,3 +8,6 @@ todos.push('item 5');
 // It should have a way to change a todo
 todos[1] = 'I am new' 
 // output: ["item 1", "I am new", "item 3", "item new", "item 5"]
+
+// delete todos (only delete element)
+todos.slice(0, 1) 
