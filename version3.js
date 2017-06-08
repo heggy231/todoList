@@ -8,22 +8,15 @@ var todosList = {
     addTodo: function (todo) {
         this.todos.push(todo);
         this.displayTodos();
+    }, 
+    changeTodo: function (position, newTodo) {
+        this.todos[position] = newTodo;
+        this.displayTodos();
     }
 };
 
-todos.todos // ["item 1", "item 2", "item 3"]
-
-function displayTodos() {
-    console.log("MyTodos: ", todos);
+function changeTodo(position, newTodo){
+    todos[position] = newTodo;
+    displayTodos();
 }
 
-// run the displayTodos() function
-todosList.displayTodos();
-// Output: MyTodos:  (3) ["item 1", "item 2", "item 3"]
-
-
-// addTodo stand alone function > addTodo Method
-function addTodo(todo) {
-    todos.push(todo);
-    displayTodos()
-}
