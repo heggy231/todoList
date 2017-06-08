@@ -12,3 +12,8 @@ todos[1] = 'I am new'
 // delete todos (remove 1 item starting position 0)
 todos.splice(0, 1) // todos now has
 todos.splice(2, 2)
+
+// v2 function to disply todos
+function displayTodos () {
+    console.log("Todos: ", todos);
+}
