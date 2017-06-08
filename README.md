@@ -1,3 +1,10 @@
 # todoList
-keep one's todos
-View todoList live: https://heggy231.github.io/todoList/todo.html
+Vanilla Javascript: TodoList App
+Live Demo link: https://heggy231.github.io/todoList/todo.html
+
+V1 Requirements:
+- It should have a place to store todos
+- It should have a way to display todos
+- It should have a way to add new todos
+- It should have a way to change a todos
+- It should have a way to delete a todos
