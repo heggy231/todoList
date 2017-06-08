@@ -25,6 +25,10 @@ function addTodo(todo) {
     displayTodos()
 }
 
-todos // to see 'new todo' element is added to the array
+// Todos:  (7) ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo", "just arrived"]
 
-
+// v2 change todo
+function changeTodo(){
+    todos[0] = "I got changed";
+    displayTodos();
+}
