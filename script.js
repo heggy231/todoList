@@ -9,5 +9,6 @@ todos.push('item 5');
 todos[1] = 'I am new' 
 // output: ["item 1", "I am new", "item 3", "item new", "item 5"]
 
-// delete todos (only delete element)
-todos.slice(0, 1) 
+// delete todos (remove 1 item starting position 0)
+todos.splice(0, 1) // todos now has
+todos.splice(2, 2)
