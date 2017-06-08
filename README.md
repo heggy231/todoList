@@ -8,3 +8,12 @@ V1 Requirements:
 - It should have a way to add new todos
 - It should have a way to change a todos
 - It should have a way to delete a todos
+
+
+V2 Requirements:
+- It should have a function to display todos
+- It should have a function to add todos
+- It should have a function to change todos
+- It should have a function to delete todos
+
+
