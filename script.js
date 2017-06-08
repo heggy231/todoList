@@ -13,7 +13,16 @@ todos[1] = 'I am new'
 todos.splice(0, 1) // todos now has
 todos.splice(2, 2)
 
-// v2 function to disply todos
+// v2 function to display todos
 function displayTodos () {
     console.log("Todos: ", todos);
 }
+
+// v2 function to add new todos
+
+function addTodo() {
+    todos.push('new todo');
+}
+
+todos // to see 'new todo' element is added to the array
+
