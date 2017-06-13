@@ -40,3 +40,12 @@ Overall lesson from V4:
 this.todos[position].todoText = todoText;
 - Toggling boolean value T/F by using bang operator (!) (which gives opposite of what comes after it)
 - true, !true > false
+
+Lesson on forLoop:
+- we may loop through using i. ex: for(var i = 0; i <3; i++) { 
+    console.log(testArray[i]) }
+
+V5 Requirements:
+- .displayTodos should show .todoText
+- .displayTodos should tell you if .todos is empty
+- .displayTodos sould show .completed
