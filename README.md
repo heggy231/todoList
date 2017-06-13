@@ -1,4 +1,6 @@
-# todoList
+# todoList # watchandcode
+(practical javascript gordon watch and code)
+
 Vanilla Javascript: TodoList App
 Live Demo link: https://heggy231.github.io/todoList/todo.html
 
