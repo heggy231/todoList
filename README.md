@@ -24,3 +24,15 @@ V3 Requirements:
 - It should have an addTodo method
 - It should have a changeTodo method
 - It should have a deleteTodo method
+
+Overall lesson from V3:
+- We moved from stand alone function to stand alone object.  This is great since everything that is related to todoList is on todoList object.  There is an organizational benefit you get from grouping things inside of an object.  
+- We learned to create method inside object.  One key note: this inside of method refers to object name.  You may use '.' to reference to the object's property key name.  ex) this.addTodo  (object.propertyKeyName)
+
+V4 Requirements:
+- todoList.addTodo should add objects
+- todoList.changeTodo should change the todoText property
+- todoList.toggleCompleted should change the completed property
+
+Overall lesson from V4: 
+- Why object?  Object is a great way to represent more complicated data with properties on it.  
