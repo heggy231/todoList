@@ -4,7 +4,12 @@ var todosList = {
     // todos will have objects instead of simple values
     todos: [],
     displayTodos: function () {
-        console.log ("MyTodos: ", this.todos);
+        console.log ("My Todos:");
+        // i++ same i = i + 1 
+        for (var i = 0; i <this.todos.length; i++) {
+            // we don't want the whole object but only todoText property
+            console.log (this.todos[i].todoText);
+        }
     },
     addTodo: function (todoText) { // addTodo('hi') >> todoText === 'hi'
         // add new item inside array of todos
@@ -35,9 +40,3 @@ var todosList = {
         this.displayTodos();
     }
 };
-
-// make addTodo objects
-// {
-//     todoText: 'item 1',
-//     completed: false // Boolean value: true or false
-// }

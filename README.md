@@ -42,10 +42,13 @@ this.todos[position].todoText = todoText;
 - true, !true > false
 
 Lesson on forLoop:
-- we may loop through using i. ex: for(var i = 0; i <3; i++) { 
+- We may loop through using i. ex: for(var i = 0; i <3; i++) { 
     console.log(testArray[i]) }
 
 V5 Requirements:
-- .displayTodos should show .todoText
-- .displayTodos should tell you if .todos is empty
+- .displayTodos should show .todoText (done)
+- .displayTodos should tell you if .todos is empty (todo)**
 - .displayTodos sould show .completed
+
+Overall lesson from V5:
+- We applied for loop to iterate through Todos array
