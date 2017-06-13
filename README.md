@@ -36,3 +36,7 @@ V4 Requirements:
 
 Overall lesson from V4: 
 - Why object?  Object is a great way to represent more complicated data with properties on it.  
+- Using dot notation: 
+this.todos[position].todoText = todoText;
+- Toggling boolean value T/F by using bang operator (!) (which gives opposite of what comes after it)
+- true, !true > false

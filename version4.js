@@ -16,13 +16,22 @@ var todosList = {
         });
         this.displayTodos();
     }, 
-    changeTodo: function (position, newTodo) {
-        this.todos[position] = newTodo;
+    // update parameter newValue > todoText
+    changeTodo: function (position, todoText) {
+        // this.todos[position] = todoText;
+        // using dot notation to grab just todoText property to update its preexisting value to new todoText value
+        var todo = this.todos[position];
+        this.todos[position].todoText = todoText;
         this.displayTodos();
     },
     deleteTodo: function (position) {
         // splice remove one item from index position
         this.todo.splice(position, 1);
+        this.displayTodos();
+    },
+    toggleCompleted: function(position) {
+        var todo = this.todos[position];
+        todo.completed = !todo.completed;
         this.displayTodos();
     }
 };
