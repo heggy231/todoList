@@ -6,17 +6,20 @@ var todosList = {
         console.log ("MyTodos: ", this.todos);
     },
     addTodo: function (todo) {
+        // add new item inside array of todos
         this.todos.push(todo);
         this.displayTodos();
     }, 
     changeTodo: function (position, newTodo) {
         this.todos[position] = newTodo;
         this.displayTodos();
+    },
+    deleteTodo: function (position) {
+        // splice remove one item from index position
+        this.todo.splice(position, 1);
+        this.displayTodos();
     }
 };
 
-function changeTodo(position, newTodo){
-    todos[position] = newTodo;
-    displayTodos();
-}
+
 
