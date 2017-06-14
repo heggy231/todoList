@@ -1,23 +1,20 @@
 // It should store the todos array on an object
 // create addTodo method inside todosList that displays todos
-var todosList = {
+var todoList = {
     // todos will have objects instead of simple values
     todos: [],
     displayTodos: function () {
-        console.log ("My Todos:");
-        // i++ same i = i + 1 
-        for (var i = 0; i <this.todos.length; i++) {
-            // we don't want the whole object but only todoText property
-            console.log (this.todos[i].todoText);
-        }
-    
-    // if there are no todos
-    // if this.todos.length is equal to 0
-    // if this.todos.length === 0
-        // console.log('Your todo list is empty!');
-    // else
+        if (this.todos.length === 0) {
+            console.log('Your todo list is empty!');
+        } else {
         // print todos as normal
-
+            console.log ("My Todos:");
+        // i++ same i = i + 1 
+            for (var i = 0; i <this.todos.length; i++) {
+            // only todoText property
+            console.log (this.todos[i].todoText);
+            }
+        }
     },
     addTodo: function (todoText) { // addTodo('hi') >> todoText === 'hi'
         // add new item inside array of todos
@@ -39,7 +36,7 @@ var todosList = {
     },
     deleteTodo: function (position) {
         // splice remove one item from index position
-        this.todo.splice(position, 1);
+        this.todos.splice(position, 1);
         this.displayTodos();
     },
     toggleCompleted: function(position) {
