@@ -57,16 +57,14 @@ var todoList = {
         for (var i = 0; i < totalTodos; i++){
             if (this.todos[i].completed === true) {
                 completedTodos++;
-            } s
+            }
         }
-// if everything is true
-        if (completedTodos === countCompleted) {
+// Case 1: everything T > Everything F
+        if (completedTodos === totalTodos) {
+            for (var i = 0; i <totalTodos; i++){
 // make everything false
-            todo.[position].completed = true;
+            this.todos[i].completed = false;
+            }
         }
-
-
-            // else 
-        // make everthing false
     }
 };
