@@ -1,22 +1,26 @@
 // It should store the todos array on an object
 // create addTodo method inside todosList that displays todos
-var todosList = {
+var todoList = {
     // todos will have objects instead of simple values
     todos: [],
-    displayTodos: function () {
-        console.log ("My Todos:");
-        // i++ same i = i + 1 
-        for (var i = 0; i <this.todos.length; i++) {
-            // we don't want the whole object but only todoText property
-            console.log (this.todos[i].todoText);
+    displayTodos: function() {
+        if (this.todos.length === 0) {
+            console.log('Your todo list is empty!');
+        } else {
+            console.log('My Todos: ');
+            for (var i = 0; i < this.todos.length; i++) {
+                // check if .completed is true
+                if (this.todos[i].completed === true){
+        // completed; print with (x) only todoText property ith element
+                    console.log ('(x)', this.todos[i].todoText);
+                } else {
+        // not completed; print with ( ) only todoText property ith element
+                    console.log('( )', this.todos[i].todoText);
+                }
+            }
         }
-
-        // if there are no todos
-            // console.log('Your todo list is empty!');
-        // else
-            // print todos as normal
     },
-    addTodo: function (todoText) { // addTodo('hi') >> todoText === 'hi'
+    addTodo: function(todoText) { 
         // add new item inside array of todos
         this.todos.push({
             // key (name of property): value that user passes in
@@ -27,21 +31,42 @@ var todosList = {
         this.displayTodos();
     }, 
     // update parameter newValue > todoText
-    changeTodo: function (position, todoText) {
+    changeTodo: function(position, todoText) {
         // this.todos[position] = todoText;
         // using dot notation to grab just todoText property to update its preexisting value to new todoText value
         var todo = this.todos[position];
         this.todos[position].todoText = todoText;
         this.displayTodos();
     },
-    deleteTodo: function (position) {
+    deleteTodo: function(position) {
         // splice remove one item from index position
-        this.todo.splice(position, 1);
+        this.todos.splice(position, 1);
         this.displayTodos();
     },
     toggleCompleted: function(position) {
         var todo = this.todos[position];
         todo.completed = !todo.completed;
         this.displayTodos();
+    },
+    toggleAll: function(){
+        var totalTodos = this.todos.length;
+        var completedTodos = 0;
+// Get number of completed todos.
+// count how many .completed todo and check if they are 
+// equal to no of todos items
+        for (var i = 0; i < totalTodos; i++){
+            if (this.todos[i].completed === true) {
+                completedTodos++;
+            } s
+        }
+// if everything is true
+        if (completedTodos === countCompleted) {
+// make everything false
+            todo.[position].completed = true;
+        }
+
+
+            // else 
+        // make everthing false
     }
 };

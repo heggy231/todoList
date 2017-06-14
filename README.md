@@ -52,3 +52,13 @@ V5 Requirements:
 
 Overall lesson from V5:
 - We applied for loop to iterate through Todos array
+- First time for displayTodos to become useful by showing .completed ( ) vs (x)
+
+V6 Requirement:
+- .toggleAll: If everything's true; make everything false.
+- .togglaAll: Otherwise, make everything true.
+
+Overall lesson from V6:
+- Only time .toggleAll to toggle to false (not done) is when all true 
+- Every other times: .toggleAll make it true (done) 
+
