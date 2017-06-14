@@ -10,11 +10,11 @@ var todosList = {
             // we don't want the whole object but only todoText property
             console.log (this.todos[i].todoText);
         }
-    
-    // if there are no todos
-        // console.log('Your todo list is empty!');
-    // else
-        // print todos as normal
+
+        // if there are no todos
+            // console.log('Your todo list is empty!');
+        // else
+            // print todos as normal
     },
     addTodo: function (todoText) { // addTodo('hi') >> todoText === 'hi'
         // add new item inside array of todos
