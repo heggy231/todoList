@@ -8,15 +8,15 @@ var todoList = {
             console.log('Your todo list is empty!');
         } else {
         // print todos as normal
-            console.log ("My Todos:");
+            console.log ('My Todos:');
         // i++ same i = i + 1 
-            for (var i = 0; i <this.todos.length; i++) {
+            for (var i = 0; i < this.todos.length; i++) {
             // only todoText property
-            console.log (this.todos[i].todoText);
+                console.log (this.todos[i].todoText);
             }
         }
     },
-    addTodo: function (todoText) { // addTodo('hi') >> todoText === 'hi'
+    addTodo: function (todoText) { 
         // add new item inside array of todos
         this.todos.push({
             // key (name of property): value that user passes in
