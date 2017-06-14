@@ -12,9 +12,12 @@ var todosList = {
         }
     
     // if there are no todos
+    // if this.todos.length is equal to 0
+    // if this.todos.length === 0
         // console.log('Your todo list is empty!');
     // else
         // print todos as normal
+
     },
     addTodo: function (todoText) { // addTodo('hi') >> todoText === 'hi'
         // add new item inside array of todos
