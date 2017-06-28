@@ -55,10 +55,12 @@ Overall lesson from V5:
 - First time for displayTodos to become useful by showing .completed ( ) vs (x)
 
 V6 Requirement:
-- .toggleAll: If everything's true; make everything false.
-- .togglaAll: Otherwise, make everything true.
+- .toggleAll: If everything's true; make everything false. (make everything unchecked!)
+- .togglaAll: Otherwise, make everything true. (make them checked!)
 
 Overall lesson from V6:
 - Only time .toggleAll to toggle to false (not done) is when all true 
 - Every other times: .toggleAll make it true (done) 
+- If feel lost start by writing down as you are talking to someone: pseudo: completedTodos === totalTodos > create these two variable now
+
 

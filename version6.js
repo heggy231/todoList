@@ -49,22 +49,23 @@ var todoList = {
         this.displayTodos();
     },
     toggleAll: function(){
-        var totalTodos = this.todos.length;
         var completedTodos = 0;
-// Get number of completed todos.
-// count how many .completed todo and check if they are 
-// equal to no of todos items
+        var totalTodos = this.todos.length;
+
+        // Get number of completed todos.
         for (var i = 0; i < totalTodos; i++){
             if (this.todos[i].completed === true) {
                 completedTodos++;
             }
         }
-// Case 1: everything T > Everything F
+        
+        // case 1: If all compTodos T > Make all false.
         if (completedTodos === totalTodos) {
-            for (var i = 0; i <totalTodos; i++){
-// make everything false
-            this.todos[i].completed = false;
+            // Make all false
+            for(var i = 0; i < totalTodos; i++){
+                this.todos[i].completed = false;
             }
-        }
+        } 
+
     }
 };
