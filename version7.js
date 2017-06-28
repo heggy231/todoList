@@ -80,3 +80,7 @@ var displayTodosButton = document.getElementById('displayTodosButton');
 console.log(displayTodosButton);
 // 2. We want to run displayTodos method, when someone clicks
 //    the display todos button.
+
+displayTodosButton.addEventListener('click', function(){
+    todoList.displayTodos();
+}); 
