@@ -63,4 +63,7 @@ Overall lesson from V6:
 - Every other times: .toggleAll make it true (done) 
 - If feel lost start by writing down as you are talking to someone: pseudo: completedTodos === totalTodos > create these two variable now
 
-
+V7 Requirements:
+- There should be a "Display todos" button and a "Toggle all" button in the app.
+- Clicking "Display todos" should run todoList.displayTodos.
+- Clicking "Toggle all" should run todoList.toggleAll.
