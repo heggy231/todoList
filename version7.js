@@ -76,6 +76,7 @@ var todoList = {
 
 // 1. We want to get access to the display todos button.
 // document represents the DOM
-var displayTodosButton = document.
+var displayTodosButton = document.getElementById('displayTodosButton');
+console.log(displayTodosButton);
 // 2. We want to run displayTodos method, when someone clicks
 //    the display todos button.
