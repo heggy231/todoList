@@ -104,15 +104,11 @@ var handlers = {
     addTodoTextInput.value = '';
   },
   changeTodo: function(){
+// changeTodo: function(position, todoText)
     var changeTodoPositionInput = document.getElementById('changeTodoPositionInput');
-    // view if I correctly grabbing changeTodoPosition
-    // console.log(changeTodoPosition);
     var changeTodoTextInput = document.getElementById('changeTodoTextInput');
-
-  // changeTodo: function(position, todoText)
-  // position is a number use valueAsNumber
     todoList.changeTodo(changeTodoPositionInput.valueAsNumber, changeTodoTextInput.value);
-  // reset value
+
     changeTodoPositionInput.value = '';
     changeTodoTextInput.value = '';
   }
