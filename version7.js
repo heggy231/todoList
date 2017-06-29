@@ -75,10 +75,14 @@ var todoList = {
 };
 
 // 1. We want to get access to the display todos button.
-// document represents the DOM
+// From JS document variable gives you access to document object inside of HTML (DOM)
+
 var displayTodosButton = document.getElementById('displayTodosButton');
 
+
 var toggleAllButton = document.getElementById('toggleAllButton');
+
+
 // 2. We want to run displayTodos method, when someone clicks
 //    the display todos button.
 displayTodosButton.addEventListener('click', function(){
