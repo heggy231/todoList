@@ -4,6 +4,7 @@ var todoList = {
     // todos will have objects instead of simple values
     todos: [],
     displayTodos: function() {
+        // debugger;
         if (this.todos.length === 0) {
             console.log('Your todo list is empty!');
         } else {
@@ -20,7 +21,8 @@ var todoList = {
             }
         }
     },
-    addTodo: function(todoText) { 
+    addTodo: function(todoText) {
+        // debugger;
         // add new item inside array of todos
         this.todos.push({
             // key (name of property): value that user passes in
@@ -32,6 +34,7 @@ var todoList = {
     }, 
     // update parameter newValue > todoText
     changeTodo: function(position, todoText) {
+
         // this.todos[position] = todoText;
         // using dot notation to grab just todoText property to update its preexisting value to new todoText value
         var todo = this.todos[position];
@@ -39,16 +42,20 @@ var todoList = {
         this.displayTodos();
     },
     deleteTodo: function(position) {
+
         // splice remove one item from index position
         this.todos.splice(position, 1);
         this.displayTodos();
     },
     toggleCompleted: function(position) {
+        // here we use bracket notation since this.todos[position] position is variable
+        // if you are refer to the key then use dot notation.
         var todo = this.todos[position];
         todo.completed = !todo.completed;
         this.displayTodos();
     },
     toggleAll: function(){
+        debugger;
         var completedTodos = 0;
         var totalTodos = this.todos.length;
         
@@ -78,10 +85,7 @@ var todoList = {
 // From JS document variable gives you access to document object inside of HTML (DOM)
 
 var displayTodosButton = document.getElementById('displayTodosButton');
-
-
 var toggleAllButton = document.getElementById('toggleAllButton');
-
 
 // 2. We want to run displayTodos method, when someone clicks
 //    the display todos button.
