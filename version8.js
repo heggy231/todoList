@@ -98,18 +98,22 @@ var handlers = {
     todoList.toggleAll();
   },
   addTodo: function(){
-    var addTodoTextInput = document.getElementById("addTodoTextInput");
+    var addTodoTextInput = document.getElementById('addTodoTextInput');
     todoList.addTodo(addTodoTextInput.value);
     // resets addTodo text field
     addTodoTextInput.value = '';
   },
   changeTodo: function(){
-    var changeTodoPosition = document.getElementById("changeTodoPosition");
+    var changeTodoPositionInput = document.getElementById('changeTodoPositionInput');
     // view if I correctly grabbing changeTodoPosition
     // console.log(changeTodoPosition);
-    var changeTodoTextInput = document.getElementById("changeTodoTextInput");
+    var changeTodoTextInput = document.getElementById('changeTodoTextInput');
 
   // changeTodo: function(position, todoText)
-    todoList.changeTodo();
+  // position is a number use valueAsNumber
+    todoList.changeTodo(changeTodoPositionInput.valueAsNumber, changeTodoTextInput.value);
+  // reset value
+    changeTodoPositionInput.value = '';
+    changeTodoTextInput.value = '';
   }
 }
