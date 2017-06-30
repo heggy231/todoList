@@ -122,10 +122,12 @@ var handlers = {
   }
 };
 
+// view obj renders the data to the page which is not functional part of app
 var view = {
 // problem with this one is it is adding more and more at the current; we nee to refactor to clear
 // the item from previous
   displayTodos: function(){
+    // take out the .querySelector('ul') since this only needs to happen only once
     var todosUl = document.querySelector('ul');
     // clear the inside of unordered list before it starts adding new <li> items
     todosUl.innerHTML = '';
@@ -133,6 +135,5 @@ var view = {
       var todoLi = document.createElement('li');
       todosUl.appendChild(todoLi);
     }
-  todosUl.appendChild('');
   }
 };
