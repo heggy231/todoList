@@ -123,11 +123,16 @@ var handlers = {
 };
 
 var view = {
+// problem with this one is it is adding more and more at the current; we nee to refactor to clear
+// the item from previous
   displayTodos: function(){
+    var todosUl = document.querySelector('ul');
+    // clear the inside of unordered list before it starts adding new <li> items
+    todosUl.innerHTML = '';
     for (var i = 0; i < todoList.todos.length; i++) {
-      var todosUl = document.querySelector('ul');
       var todoLi = document.createElement('li');
       todosUl.appendChild(todoLi);
     }
+  todosUl.appendChild('');
   }
 };
