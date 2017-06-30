@@ -82,8 +82,11 @@ var todoList = {
 // 1. We want to get access to the display todos button.
 // From JS document variable gives you access to document object inside of HTML (DOM)
 
+
+
 // 2. We want to run displayTodos method, when someone clicks
 //    the display todos button.
+
 
 var handlers = {
   displayTodos: function(){
@@ -96,7 +99,7 @@ var handlers = {
     addTodoTextInput.value = '';
   },
   changeTodo: function(){
-    // changeTodo: function(position, todoText) note position is number .valueAsNumber
+// changeTodo: function(position, todoText) note position is number .valueAsNumber
     var changeTodoPositionInput = document.getElementById('changeTodoPositionInput');
     var changeTodoTextInput = document.getElementById('changeTodoTextInput');
     todoList.changeTodo(changeTodoPositionInput.valueAsNumber, changeTodoTextInput.value);
@@ -117,4 +120,12 @@ var handlers = {
   toggleAll: function(){
     todoList.toggleAll();
   }
-}
+};
+
+var view = {
+  displayTodos: function(){
+    var todosUl = document.querySelector('ul');
+    var todoLi = document.createElement('li');
+    todosUl.appendChild(todoLi);
+  }
+};
