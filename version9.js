@@ -127,6 +127,7 @@ var view = {
 // problem with this one is it is adding more and more at the current; we nee to refactor to clear
 // the item from previous
   displayTodos: function(){
+    // debugger;
     // take out the .querySelector('ul'); since this only needs to happen only once
     var todosUl = document.querySelector('ul');
     // clear the inside of unordered list before it starts adding new <li> items
@@ -135,7 +136,7 @@ var view = {
     for(var i = 0; i < todoList.todos.length; i++){
       // creates output: <li> </li>
       var todoLi = document.createElement('li');
-      var todo = todoList.todo[i];
+      var todo = todoList.todos[i];
       // var todoTextWithCompletion = '';
       // if (todo.completed === true)
         // (x) todoText
@@ -149,8 +150,9 @@ var view = {
       } else {
         todoTextWithCompletion = '( ) ' + todo.todoText;
       }
-      
-      // could use todoLi.innerHTML but .textContent is more efficient/secure 
+
+      // DOM manipulation: option to use .innerHTML to display text
+      // note: .textContent is more efficient/secure way to display text
       // below replaces earlier line: todoLi.textContent = todoList.todos[i].todoText; 
       // now with completion info
       todoLi.textContent = todoTextWithCompletion;
