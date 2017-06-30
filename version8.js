@@ -34,7 +34,6 @@ var todoList = {
   }, 
   // update parameter newValue > todoText
   changeTodo: function(position, todoText) {
-
     // this.todos[position] = todoText;
     // using dot notation to grab just todoText property to update its preexisting value to new todoText value
     var todo = this.todos[position];
@@ -42,7 +41,6 @@ var todoList = {
     this.displayTodos();
   },
   deleteTodo: function(position) {
-
     // splice remove one item from index position
     this.todos.splice(position, 1);
     this.displayTodos();
@@ -94,9 +92,6 @@ var handlers = {
   displayTodos: function(){
     todoList.displayTodos();
   },
-  toggleAll: function(){
-    todoList.toggleAll();
-  },
   addTodo: function(){
     var addTodoTextInput = document.getElementById('addTodoTextInput');
     todoList.addTodo(addTodoTextInput.value);
@@ -104,7 +99,7 @@ var handlers = {
     addTodoTextInput.value = '';
   },
   changeTodo: function(){
-// changeTodo: function(position, todoText)
+// changeTodo: function(position, todoText) note position is number .valueAsNumber
     var changeTodoPositionInput = document.getElementById('changeTodoPositionInput');
     var changeTodoTextInput = document.getElementById('changeTodoTextInput');
     todoList.changeTodo(changeTodoPositionInput.valueAsNumber, changeTodoTextInput.value);
@@ -115,7 +110,14 @@ var handlers = {
   deleteTodo: function(){
     var deleteTodoPositionInput = document.getElementById('deleteTodoPositionInput');
     todoList.deleteTodo(deleteTodoPositionInput.valueAsNumber);
-
     deleteTodoPositionInput.value = '';
+  },
+  toggleCompleted: function(){
+    var toggleCompletedPositionInput = document.getElementById('toggleCompletedPositionInput');
+    todoList.toggleCompleted(toggleCompletedPositionInput.valueAsNumber);
+    toggleCompletedPositionInput.value = '';
+  },
+  toggleAll: function(){
+    todoList.toggleAll();
   }
 }
