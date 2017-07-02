@@ -30,7 +30,7 @@ runsWithDebugger(function logTenNumbers(){
 
 // setTimeout enhances the function that is passed in by turning it into alarm clock
 setTimeout(function() {
-	console.log('Wake up Gordon!");
+	console.log('Wake up Gordon!');
 }, 5000);
 
 // output: Wake up Gordon! runs after 5 seconds
@@ -79,3 +79,26 @@ forEach(students, function logName (name) {
 forEach(students, function (name) {
 	console.log(name);
 });
+
+// function that enhances other functions
+// when .addEventListener it add a behavior only when tutorial element is clicked function that console logs name.
+
+// selected element on DOM (page)
+$0;
+// grab $0 and set equal to tutorialElement
+var tutorialsElement = $0;
+// also add .addEventListener for ‘click’ and console log ‘The tutorials element was clicked!’
+tutorialsElement.addEventListener('click', function(){
+	console.log('The tutorials element was clicked!');
+});
+
+// addEventListener has event object
+tutorialsElement.addEventListener('click', function(event) {
+	console.log(event);
+	alert('hello wonderful!');
+});
+
+// ouput of event: MouseEvent {isTrusted: true, screenX: 1570, screenY: 1527, clientX: 325, clientY: 275…}
+
+
+
