@@ -33,11 +33,17 @@
 
     <script>
       function changeMe() {
+        // grab <ul>
         var myUl = document.querySelector('ul');
+        // resets <li> previously added
         myUl.innerHTML = '';
+        // create <li> inside DOM
         var myLi = document.createElement('li');
+        // enter text inside my <li>
         myLi.textContent = "I am going to change";
+        // assign myStyle css .className
         myLi.className = "myStyle";
+        // append <li> under <ul>
         myUl.appendChild(myLi);
       }
     </script>
