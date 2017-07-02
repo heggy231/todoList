@@ -78,3 +78,10 @@ V9 Requirements:
 - There should be an li element for every todo
 - Each li element should contain .todoText
 - Each li element should show .completed
+
+Interlude: Function inside of functions
+- runWithDebugger
+- setTimeOut
+- forEach
+- addEventListener
+- Buzzword: Higher order functions and callback functions
