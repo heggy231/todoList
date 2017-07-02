@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_classname-->
+    <style>
+      .myStyle {
+        width: 300px;
+        height: 100px;
+        background-color: coral;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Click the button to set a class for div.</p>
+
+    <!--<div id="myDIV">
+      I am a DIV element.
+    </div>-->
+    <!--<script>
+    function myFunction() {
+        document.getElementById("myDIV").className = "mystyle";
+    }
+    </script>-->
+
+    <div>
+      <ul>
+      </ul>
+    </div>
+
+    <script>
+      function changeMe() {
+        var myUl = document.querySelector('ul');
+        myUl.innerHTML = '';
+        var myLi = document.createElement('li');
+        myLi.textContent = "I am going to change";
+        myLi.className = "myStyle";
+        myUl.appendChild(myLi);
+      }
+    </script>
+
+    <button onclick="changeMe()">Try it</button>
+
+
+
+
+
+  </body>
+</html>

@@ -142,7 +142,10 @@ var view = {
   // view.displayTodos are creating DOM element but create
   // separate method since it is getting too long
   createDeleteButton: function() {
-    var deleteButton;
+    var deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    // access to newly created deleteButton
+    deleteButton
     return deleteButton;
   }
 };
