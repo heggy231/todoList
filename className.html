@@ -35,6 +35,12 @@
       function changeMe() {
         // grab <ul>
         var myUl = document.querySelector('ul');
+
+        // testing the difference btwn .innerHTML vs textContent .innerHTML is interpreted version of HTML
+        // .textContent displays literal form 
+        // myUl.innerHTML = '<a>blah</a>'; //output: blah
+        // myUl.textContent = '<a>blah</a>'; //output: <a>blah</a>
+
         // resets <li> previously added
         myUl.innerHTML = '';
         // create <li> inside DOM
