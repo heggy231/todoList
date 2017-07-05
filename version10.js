@@ -143,9 +143,10 @@ var view = {
   // separate method since it is getting too long
   createDeleteButton: function() {
     var deleteButton = document.createElement('button');
+    // labeling the button itself
     deleteButton.textContent = 'Delete';
-    // access to newly created deleteButton
-    deleteButton
+    // access to newly created not unique deleteButtons
+    deleteButton.className = 'deleteButton';
     return deleteButton;
   }
 };
