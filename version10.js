@@ -130,6 +130,8 @@ var view = {
         todoTextWithCompletion = '( ) ' + todo.todoText;
       }
 
+      // assigning each todo with id of its position (i) 
+      todoLi.id = i;
       // DOM manipulation: option to use .innerHTML to display text
       // note: .textContent is more efficient/secure way to display text
       // below replaces earlier line: todoLi.textContent = todoList.todos[i].todoText; 
