@@ -151,26 +151,31 @@ var view = {
     // access to newly created button by class not unique deleteButtons
     deleteButton.className = 'deleteButton';
     return deleteButton;
+  },
+  setUpEventListeners: function(){
+    // todosUl to grab ul on page and 
+    var todosUl = document.querySelector('ul');
+    // Delete buttons should have access to the todo id
+    // to understand next line of code try this to see where .target pointing to
+    /* todosUl.addEventListener('click', function (event){
+        console.log(event);}); */
+    todosUl.addEventListener('click', function (event){
+      // event.target = deleteButton, .parentNode.id = unique id each todo li
+      // console.log(event.target.parentNode.id); // output: id of clicked li
+
+      // Get the element that was clicked on.
+      var elementClicked = event.target;
+
+      // Check if elementClicked is a delete button
+      if (elementClicked.className === 'deleteButton'){
+        // Run handlers.deleteTodo(parseInt(elementClicked.parentNode.id)), turn elementClicked.parentNode.id string into num by using parseInt
+        // parseInt(elementClicked.parentNode.id) = position of delete
+        handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
+      }
+    });
   }
 };
+// make the method run
+view.setUpEventListeners();
 
-// todosUl to grab ul on page and 
-var todosUl = document.querySelector('ul');
-// Delete buttons should have access to the todo id
-// to understand next line of code try this to see where .target pointing to
-/* todosUl.addEventListener('click', function (event){
-	   console.log(event);}); */
-todosUl.addEventListener('click', function (){
-  // event.target = deleteButton, .parentNode.id = unique id each todo li
-  // console.log(event.target.parentNode.id); // output: id of clicked li
 
-  // Get the element that was clicked on.
-  var elementClicked = event.target;
-
-  // Check if elementClicked is a delete button
-  if (elementClicked.className === 'deleteButton'){
-    // Run handlers.deleteTodo(parseInt(elementClicked.parentNode.id)), turn elementClicked.parentNode.id string into num by using parseInt
-    // parseInt(elementClicked.parentNode.id) = position of delete
-    handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
-  }
-});
