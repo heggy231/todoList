@@ -135,17 +135,20 @@ var view = {
       // below replaces earlier line: todoLi.textContent = todoList.todos[i].todoText; 
       // now with completion info
       todoLi.textContent = todoTextWithCompletion;
+      // each todo list will have brand new delete button
+      todoLi.appendChild(this.createDeleteButton());
       // Ul is parent of li element
       todosUl.appendChild(todoLi); 
     }
   },
   // view.displayTodos are creating DOM element but create
   // separate method since it is getting too long
+  // view.createDeleteButton(); // output: <button class="deleteButton">Delete</button>
   createDeleteButton: function() {
     var deleteButton = document.createElement('button');
     // labeling the button itself
     deleteButton.textContent = 'Delete';
-    // access to newly created not unique deleteButtons
+    // access to newly created button by class not unique deleteButtons
     deleteButton.className = 'deleteButton';
     return deleteButton;
   }
