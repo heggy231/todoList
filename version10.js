@@ -155,3 +155,16 @@ var view = {
     return deleteButton;
   }
 };
+
+// todosUl to grab ul on page and 
+var todosUl = document.querySelector('ul');
+// Delete buttons should have access to the todo id
+// to understand next line of code try this to see where .target pointing to
+/* todosUl.addEventListener('click', function (event){
+	   console.log(event);}); */
+todosUl.addEventListener('click', function (){
+  // event.target = deleteButton, .parentNode.id = unique id each todo li
+  console.log(event.target.parentNode.id);
+
+  
+});
