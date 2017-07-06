@@ -92,3 +92,7 @@ V10 Requirements:
 - Each li should have an id that has the todo position
 - Delete buttons should have access to the todo id
 - Clicking delete should update todoList.todos and the DOM
+
+V11 Requirements:
+- todoList.toggleAll should use forEach
+- view.displayTodos should use forEach
