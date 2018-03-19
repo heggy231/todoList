@@ -2,7 +2,10 @@
 (practical javascript gordon watch and code)
 
 Vanilla Javascript: TodoList App
-Live Demo link: https://heggy231.github.io/todoList/todo.html
+[Demo](http://heggy.me/todoList/todo.html)
+
+![Todo App](./asset/TodoList.png "Logo Title Text 1")
+
 
 V1 Requirements:
 - It should have a place to store todos
