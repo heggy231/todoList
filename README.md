@@ -2,7 +2,7 @@
 - Workbook for watch and code Javascript course
 
 - TodoList App create with :heart: Vanilla Javascript
-**[Demo]**(http://heggy.me/todoList)
+**[Demo](http://heggy.me/todoList)**
 
 ![Todo App](./asset/TodoList.png "Logo Title Text 1")
 
