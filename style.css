@@ -1,11 +1,11 @@
 body {
   margin: 2.5% 5%;
   font-family: 'Fredericka the Great', Barrio, 'Pangolin', sans-serif;
-  background: #961a20; 
+   
 }
 
 .header {
-    color: rgb(242, 236, 214);
+    color: #961a20;
     text-align: left;
     vertical-align: top;
     position: relative;
@@ -21,14 +21,15 @@ body {
   }
 
 .floating-box {
-    display: inline-block;
-    width: 380px;
-    height: 75px;
-    margin: 1px;
-    /* border: 3px solid #73AD21;  */
+  display: inline-block;
+  width: 380px;
+  height: 75px;
+  margin: 1px;
+  /* border: 3px solid #73AD21;  */
 }
 
 .pencilIcon {
-  margin-top: 20px;
+  margin-top: 22px;
   font-size: 48px;
+  color: #961a20;
 }
