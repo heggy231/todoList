@@ -1,7 +1,7 @@
-# todoList # watchandcode
-(practical javascript gordon watch and code)
+# todoList App
+- Workbook for watch and code Javascript course
 
-Vanilla Javascript: TodoList App
+- TodoList App create with :heart: Vanilla Javascript
 [Demo](http://heggy.me/todoList/todo.html)
 
 ![Todo App](./asset/TodoList.png "Logo Title Text 1")
